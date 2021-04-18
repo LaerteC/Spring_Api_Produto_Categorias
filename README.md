@@ -1,4 +1,4 @@
-# Spring_Api_Produto_Categorias
+# Api :SpringBoot Spring Data JPA
 
 🚀  Projeto em SpringBoot e Banco H2 (EM MEMÓRIA)
 
