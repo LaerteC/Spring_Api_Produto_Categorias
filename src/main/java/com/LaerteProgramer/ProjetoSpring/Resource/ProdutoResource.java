@@ -33,7 +33,7 @@ public class ProdutoResource {
     public ResponseEntity<Produto> findById(@PathVariable Long id){
 		
 		
-		Produto produto = produtoRepositorio.findById(id);
+		Produto produto = produtoRepositorio.findById(id).get();
 		
 		return ResponseEntity.ok().body(produto);
 	}

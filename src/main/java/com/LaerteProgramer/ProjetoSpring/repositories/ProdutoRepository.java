@@ -1,33 +1,13 @@
 package com.LaerteProgramer.ProjetoSpring.repositories;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
-import org.springframework.stereotype.Component;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.LaerteProgramer.ProjetoSpring.entities.Produto;
 
-@Component
-public class ProdutoRepository {
+@Repository
+public interface ProdutoRepository extends JpaRepository<Produto,Long> {
 	
-	private Map<Long,Produto> mapa = new HashMap<>();
 	
-	public void save(Produto prod) {
-		
-		mapa.put(prod.getId(), prod);
-	}
-	public Produto findById(Long id) {
-		
-		return mapa.get(id);
-		
-	}
-	
-	public List<Produto> findAll(){
-		
-		return new ArrayList<Produto>(mapa.values());
-		
-	}
 
 }

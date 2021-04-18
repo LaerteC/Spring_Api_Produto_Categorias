@@ -30,18 +30,18 @@ public class ProjetoSpringApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		
 
-		Categoria cat1 = new Categoria(1L,"Eletronicos");
+		Categoria cat1 = new Categoria(null,"Eletronicos");
 		
-		Categoria cat2 = new Categoria(2L,"Eletrodomésticos");
+		Categoria cat2 = new Categoria(null,"Eletrodomésticos");
 		
-		Categoria cat3 = new Categoria(3L,"Roupa e Cama");
+		Categoria cat3 = new Categoria(null,"Roupa e Cama");
 		
 		
-		Produto prod1 = new Produto(1L,"Celular",2500.00,cat1);
+		Produto prod1 = new Produto(null,"Celular",2500.00,cat1);
 		
-		Produto prod2 = new Produto(2L,"Geladeira",6000.00,cat2);
+		Produto prod2 = new Produto(null,"Geladeira",6000.00,cat2);
 		
-		Produto prod3 = new Produto(3L,"Lençól",50.00,cat3);
+		Produto prod3 = new Produto(null,"Lençól",50.00,cat3);
 		
 		cat1.getProdutos().addAll(Arrays.asList(prod1));
 		cat2.getProdutos().addAll(Arrays.asList(prod2));
